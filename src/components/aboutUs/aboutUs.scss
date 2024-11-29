@@ -1,0 +1,23 @@
+@use "../../variables";
+
+.aboutUsPage {
+  background: variables.$backgroundGradient;
+  width: 100vw;
+  max-width: 100vw;
+  padding-top: 25rem;
+  padding-bottom: variables.$pageBottomPadding;
+  .aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 25rem);
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem;
+    background-color: variables.$backgroundColor1;
+    color: variables.$textColorWhite;
+    border-radius: 9px;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
+}

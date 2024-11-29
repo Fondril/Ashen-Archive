@@ -1,0 +1,100 @@
+@use "../../variables";
+
+.userPage {
+  background: variables.$backgroundGradient;
+  color: variables.$textColorWhite;
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 25rem;
+  padding-bottom: variables.$pageBottomPadding;
+  font-size: 1.6rem;
+}
+
+.userPageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: variables.$sectionGap;
+  .topFlex {
+    display: flex;
+    justify-content: space-between;
+    background-color: variables.$backgroundColor1;
+    border-radius: 9px;
+    padding: 2rem;
+    .profileImage {
+      width: 360px;
+      height: 360px;
+      border-radius: 9px;
+    }
+    .profileStats {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-color: variables.$backgroundColor;
+      padding: 2rem;
+      height: 360px;
+      width: 400px;
+      border-radius: 9px;
+      .profileStatsWrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        height: 20rem;
+        font-size: 2rem;
+      }
+    }
+  }
+  .favouriteGamesSection {
+    display: flex;
+    flex-direction: column;
+
+    background-color: variables.$backgroundColor1;
+    border-radius: 9px;
+    padding: 2rem;
+    gap: 6.4rem;
+    .favouriteGamesList {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      background-color: variables.$backgroundColor;
+      border-radius: 9px;
+      justify-content: center;
+      gap: 3rem;
+      padding: 2rem;
+    }
+  }
+  .userPageGamesRegistry {
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$backgroundColor1;
+    border-radius: 9px;
+    padding: 2rem;
+    gap: 6.4rem;
+    .userPageGamesRegistryList {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 2rem;
+      gap: 3rem;
+      background-color: variables.$backgroundColor;
+      border-radius: 9px;
+      color: variables.$textColorWhite;
+      min-height: 30rem;
+      max-width: 100%;
+    }
+  }
+  .userPageReviews {
+    display: flex;
+    flex-direction: column;
+    color: variables.$textColorGrey;
+    gap: 6.4rem;
+    .userPageReviewsList {
+      background-color: variables.$navigationColor;
+      color: variables.$textColorWhite;
+      height: 50rem;
+    }
+  }
+}

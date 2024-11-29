@@ -1,0 +1,75 @@
+@use "../../../variables";
+
+.favouriteGame {
+  width: 20rem;
+  height: 15rem;
+  display: block;
+  position: relative;
+  transition: all 0.25s ease-out;
+  .favouriteGameImage {
+    border-radius: 9px;
+    width: 20rem;
+    max-width: 20rem;
+    height: 15rem;
+    min-height: 15rem;
+    object-fit: cover;
+  }
+}
+
+.favouriteGameComponentHoverElementsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  background-color: variables.$navigationColor;
+  color: variables.$textColorWhite;
+  font-weight: 400;
+  border-radius: 0 0 9px 9px;
+  opacity: 80%;
+  z-index: 100;
+  transition-duration: 0.2s;
+  top: 15rem;
+  font-size: 0px;
+  height: 0px;
+  width: 100%;
+}
+.favouriteGameShow {
+  height: 7.5rem;
+  font-size: 2rem;
+  top: 7.5rem;
+}
+.favouriteGameComponentContainer:hover {
+  transition-duration: 0.01s;
+  border: 4px solid variables.$navigationColor;
+}
+
+.favouriteGameComponentHoverRemoveGame {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$backgroundColor;
+  color: variables.$textColorWhite;
+  border-radius: 6px;
+  opacity: 0;
+  z-index: 1000;
+  transition-duration: 0.2s;
+  top: 0.5rem;
+  left: 17.5rem;
+  height: 2rem;
+  width: 2rem;
+  img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 6px;
+  }
+}
+.favouriteGameRemoveGameShow {
+  opacity: 1;
+}
+.favouriteGameComponentHoverRemoveGame:hover {
+  transition-duration: 0.01s;
+  border: 1px solid white;
+  background-color: black;
+}

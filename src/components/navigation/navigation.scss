@@ -1,0 +1,102 @@
+@use "./../../variables";
+
+.navigationContainer {
+  position: fixed;
+  z-index: 100000;
+  a {
+    color: variables.$textColorWhite;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .navigation {
+    width: 100%;
+    height: variables.$navigationHeight;
+    background-color: variables.$navigationColor;
+    color: variables.$textColorWhite;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0 6rem 0 2rem;
+    .leftSideNavigation {
+      display: flex;
+      gap: 3.2rem;
+      .likeNavLink {
+        cursor: pointer;
+      }
+      .likeNavLink:hover {
+        text-decoration: underline;
+      }
+    }
+    .navigationSearch {
+      display: flex;
+      align-items: center;
+      position: relative;
+      gap: 1rem;
+      .navigationSearchBar {
+        width: 18rem;
+        height: 3rem;
+        background-color: variables.$backgroundColor;
+        color: variables.$textColorWhite;
+        padding-left: 1rem;
+        border: none;
+        border-radius: 6px;
+        font-family: "Roboto", system-ui;
+        font-weight: 500;
+        font-size: 1.6rem;
+        outline: none;
+      }
+      .navigationSearchBtn {
+        width: 3rem;
+        height: 3rem;
+        background-color: variables.$navigationColor;
+        border: none;
+        img {
+          width: 2.8rem;
+          height: 3rem;
+        }
+      }
+      .searchResult {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 40rem;
+        position: absolute;
+        top: 3rem;
+        left: -22rem;
+        background-color: variables.$backgroundColor1;
+        border-radius: 9px;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.userStatePopUpContainer {
+  z-index: 10000;
+  position: absolute;
+  top: 10vh;
+  left: calc(50vw - 25vw);
+  width: 50vw;
+  height: 5rem;
+  display: flex;
+  opacity: 0.88;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 9px;
+  font-size: 2rem;
+  background-color: variables.$backgroundColor;
+  color: variables.$textColorWhite;
+  .userStatePopUpImage {
+    height: 3rem;
+    width: 3rem;
+  }
+  .userStatePopUpImage:hover {
+    background-color: variables.$navigationColor;
+    border-radius: 6px;
+    border: 1px solid white;
+  }
+}

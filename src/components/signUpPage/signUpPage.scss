@@ -1,0 +1,99 @@
+@use "../../variables";
+
+.signUpContainer {
+  position: absolute;
+  top: 25vh;
+  left: 15vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 46rem;
+  width: 40rem;
+  max-width: 50rem;
+  gap: 8.6rem;
+  background-color: variables.$backgroundColor1;
+  color: variables.$textColorWhite;
+  border-radius: 9px;
+  .signUpForm {
+    display: flex;
+    flex-direction: column;
+    height: 46rem;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    .signUpFormContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .signUpInput {
+        background-color: variables.$backgroundColor !important;
+        color: variables.$textColorWhite;
+        padding: 0.5rem;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.6rem;
+      }
+
+      .signUpInfoPopUp {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .signUpInfoIconImage {
+          display: block;
+          justify-content: center;
+          height: 1.6rem;
+          width: 1.6rem;
+        }
+        .signUpInfoIconImage:hover {
+          background-color: variables.$navigationColor;
+          border-radius: 50%;
+        }
+        .signUpEmailInfoPopUp {
+          position: absolute;
+          left: 10rem;
+          background-color: variables.$navigationColor;
+          padding: 0.5rem;
+          border-radius: 9px;
+        }
+        .signUpPasswordInfoPopUp {
+          position: absolute;
+          left: 13rem;
+          background-color: variables.$navigationColor;
+          padding: 0.5rem;
+          border-radius: 9px;
+        }
+      }
+    }
+    .signUpCTA {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .signUpLink {
+        color: variables.$textColorWhite;
+      }
+      .signUpLink:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #signUpButton {
+    height: 6rem;
+    width: 24rem;
+    min-width: 24rem;
+    background-color: variables.$buttonBackground;
+    border: 2px solid variables.$silverColor;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: variables.$textColorWhite;
+    font-size: 2rem;
+  }
+  #signUpButton:hover {
+    background-color: variables.$navigationColor;
+  }
+}

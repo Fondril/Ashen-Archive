@@ -1,0 +1,49 @@
+// Navigation
+
+$navigationColor: #000000;
+$navigationColorTint1: #2e2e2e;
+
+//Background
+
+$backgroundColor: #242424;
+$backgroundColor1: #3d3d3ddc;
+$backgroundColorBlack: #000000;
+
+$backgroundGradient: linear-gradient(
+  90deg,
+  rgba(0, 0, 0, 1) 0%,
+  rgba(28, 33, 29, 1) 20%,
+  rgba(92, 85, 66, 1) 50%,
+  rgba(28, 33, 29, 1) 80%,
+  rgba(0, 0, 0, 1) 100%
+);
+
+// Button colors
+
+$buttonBackground: #5c5542;
+
+//
+
+// TEXT
+
+$textColorWhite: #fff;
+$textColorWhiteShade05: #bebebe;
+$textColorWhiteShade1: #afafaf;
+$textColorWhiteShade2: #555;
+
+//
+
+$navigationHeight: 6.4rem;
+$sectionGap: 4rem;
+$pageBottomPadding: 7rem;
+
+//
+$navigationColorLighterTint: #3f484d;
+$textColorGrey: #333;
+$papirusYellow: #c99868;
+$charcoal: #36454f;
+
+$silverColor: #c0c0c0;
+
+$h1FontSize: 4rem;
+$h2FontSize: 3rem;

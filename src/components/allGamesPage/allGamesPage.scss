@@ -1,0 +1,117 @@
+@use "../../variables";
+
+.allGamesPage {
+  background: variables.$backgroundGradient;
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 25rem;
+  padding-bottom: variables.$pageBottomPadding;
+}
+
+.allGamesPageGamesList {
+  width: 70%;
+  min-width: 1200px;
+  min-height: 90rem;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 9px;
+  background-color: variables.$backgroundColor1;
+  .allGamesleftBarAndGamesList {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    border-radius: 9px;
+  }
+}
+
+.allGamesPageGamesListTopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .allGamesPageGamesListTopBarLeftSide {
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    font-size: 24px;
+    .topBarElement {
+      background-color: variables.$backgroundColor;
+      color: variables.$textColorWhite;
+      border-radius: 9px;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .topBarElement:hover {
+      filter: brightness(85%);
+    }
+    .topBarElement:active {
+      filter: brightness(90%);
+    }
+    .topBarActive {
+      background-color: variables.$backgroundColorBlack;
+    }
+  }
+}
+
+.allGamesPageGamesListLeftBar {
+  display: flex;
+  border-radius: 9px;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 4rem;
+  background-color: variables.$backgroundColor;
+  color: variables.$textColorWhite;
+  .leftBarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .allGamesPageGamesListLeftBarCategory {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      font-size: 20px;
+
+      .allGamesPageGamesListLeftBarSubCategory {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        padding-left: 1rem;
+        cursor: pointer;
+        .leftBarElement {
+          background-color: variables.$backgroundColor1;
+          padding-left: 5px;
+          font-size: 18px;
+          border-radius: 6px;
+        }
+        .leftBarElement:hover {
+          filter: brightness(85%);
+        }
+        .leftBarElement:active {
+          filter: brightness(90%);
+        }
+        .leftBarActive {
+          border: 2px solid variables.$textColorWhite;
+          background-color: variables.$backgroundColorBlack;
+        }
+      }
+    }
+  }
+}
+
+.allGamesPagePresentedGamesList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  gap: 2rem;
+  border-radius: 0 9px 9px 0;
+}
+
+.allGamesPageByPlayersHeight {
+  height: 10rem;
+}
+
+.allGamesPageByGenreHeight {
+  height: 75rem;
+}

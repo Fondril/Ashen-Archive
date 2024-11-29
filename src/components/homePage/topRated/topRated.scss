@@ -1,0 +1,40 @@
+@use "../../../variables";
+
+.topRatedSection {
+  background: variables.$backgroundGradient;
+  padding-bottom: variables.$pageBottomPadding;
+  padding-top: variables.$sectionGap;
+}
+
+.topRatedContainer {
+  width: 70%;
+  min-width: 1200px;
+  background-color: variables.$backgroundColor1;
+  border-radius: 9px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  .topRatedHeader {
+    font-size: 4rem;
+    color: variables.$textColorWhite;
+  }
+
+  .topRatedGamesListContainer {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    gap: 2rem;
+    .topRatedGamesListComponentRankWrapper {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      .topRatedGamesListComponentRank {
+        background-color: variables.$backgroundColor;
+        padding: 1rem;
+        border-radius: 9px;
+        font-size: 4rem;
+        color: white;
+      }
+    }
+  }
+}

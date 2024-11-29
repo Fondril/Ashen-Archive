@@ -1,0 +1,69 @@
+@use "../../../variables";
+
+.featuredGameComponentContainer {
+  display: block;
+  position: relative;
+  transition: all 0.25s ease-out;
+  width: 32.666rem;
+  height: 18rem;
+  border-radius: 9px;
+  .featuredGameComponentContainerImage {
+    width: 32.666rem;
+    height: 18rem;
+    background-size: cover;
+    border-radius: 9px;
+    object-fit: cover;
+  }
+}
+
+.featuredGameComponentHoverElementsContainer {
+  display: flex;
+  position: absolute;
+  background-color: variables.$navigationColor;
+  color: variables.$textColorWhiteShade1;
+  font-weight: 400;
+  opacity: 85%;
+  z-index: 100;
+  transition-duration: 0.2s;
+  top: calc(18rem);
+  font-size: 0px;
+  height: 0px;
+  width: 100%;
+  border-radius: 0 0 9px 9px;
+  .featuredGameComponentHoverElements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    div span {
+      color: variables.$textColorWhite;
+    }
+  }
+}
+.featuredGameShow {
+  height: 12rem;
+  font-size: 16.5px;
+  top: calc(18rem - 12rem);
+}
+.featuredGameComponentContainer:hover {
+  transition-duration: 0.01s;
+}
+.featuredGameComponentContainer:active {
+  transition-duration: 0.1s;
+}
+
+.featuredGamesSlider {
+  display: flex;
+  gap: 2rem;
+  transition: all 0.5s;
+}
+
+.pos0 {
+  transform: translateX(0px);
+}
+.pos1 {
+  transform: translateX(-1040px);
+}
+.pos2 {
+  transform: translateX(-2080px);
+}

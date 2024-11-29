@@ -1,0 +1,27 @@
+@use "../../variables";
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  height: 10rem;
+  background-color: variables.$navigationColor;
+  color: variables.$textColorWhite;
+  gap: 3.2rem;
+  font-size: 2rem;
+  .email {
+    font-size: 3rem;
+  }
+}
+
+#logoWrapper {
+  height: 8rem;
+  width: 8rem;
+  background-color: white;
+  border-radius: 50%;
+  .footerLogo {
+    height: 8rem;
+    width: 8rem;
+  }
+}

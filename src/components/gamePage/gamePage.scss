@@ -1,0 +1,254 @@
+@use "../../variables";
+
+.gamePageSection {
+  background-color: variables.$backgroundColor1;
+  color: variables.$textColorWhite;
+  border-radius: 9px;
+  padding: 2rem;
+}
+
+.sectionGamePageContainer {
+  background: variables.$backgroundGradient;
+  color: variables.$textColorWhite;
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 25rem;
+  padding-bottom: variables.$pageBottomPadding;
+  font-size: 1.9rem;
+}
+
+.gamePageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: variables.$sectionGap;
+  .gamePageNotLoggedInMessage {
+    display: flex;
+    gap: 2rem;
+    background-color: variables.$backgroundColor;
+    font-size: 2.5rem;
+    a {
+      color: white;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .topFlex {
+    display: flex;
+    justify-content: space-between;
+    .gamePageGameImage {
+      background-color: black;
+      width: 640px;
+      height: 360px;
+      border-radius: 9px;
+    }
+    .gameDetails {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: variables.$backgroundColor;
+      padding: 2rem;
+      height: 360px;
+      width: 400px;
+      border-radius: 9px;
+      div {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        height: 20rem;
+        span {
+          color: #bebebe;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  .websiteStatisticsAndCta {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    background-color: variables.$backgroundColor;
+    .websiteStatistics {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      padding: 4rem;
+      .websiteStatisticsComponent {
+        width: 11rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p:first-child {
+          margin: 0 auto;
+          padding: 0.5rem;
+          font-size: 1.6rem;
+        }
+        p:nth-child(2) {
+          color: #fff;
+          font-size: 4rem;
+        }
+        p:nth-child(3) {
+          color: #bebebe;
+          font-size: 1.2rem;
+        }
+      }
+    }
+    .cta {
+      background-color: variables.$backgroundColor1;
+      border-radius: 0 0 9px 9px;
+      width: 100%;
+      height: 7rem;
+      padding: 0 4rem 0 4rem;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      font-size: 2rem;
+      text-align: center;
+      select {
+        background-color: variables.$backgroundColor;
+        height: 3.5rem;
+        width: 20rem;
+        color: variables.$textColorWhite;
+        border-radius: 6px;
+        display: flex;
+        gap: 5rem;
+        outline: none;
+      }
+      select:hover {
+        appearance: none;
+        background-color: variables.$navigationColor;
+      }
+
+      button {
+        width: 90%;
+        height: 5rem;
+        border: 2px solid variables.$silverColor;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: variables.$buttonBackground;
+        font-size: 1.8rem;
+        p {
+          color: variables.$textColorWhite;
+          font-size: 2rem;
+        }
+      }
+      button:hover {
+        background-color: variables.$navigationColor;
+      }
+      button:active {
+        border: none;
+        background-color: variables.$navigationColor;
+      }
+    }
+  }
+  .gameDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: variables.$textColorWhite;
+    .gameDescription {
+      font-family: "Roboto";
+      line-height: 1.6;
+    }
+  }
+  .gameMediaSection {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: variables.$textColorWhite;
+    .gameMedia {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: space-between;
+      .gameMediaImage {
+        width: 35rem;
+        height: 22rem;
+        border-radius: 9px;
+      }
+    }
+  }
+  .sysReqsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: variables.$textColorWhite;
+    .sysReqs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.2rem;
+      .reqs {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        span {
+          color: variables.$textColorWhiteShade05;
+          font-size: 1.6rem;
+        }
+        div {
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+        }
+      }
+    }
+  }
+  .reviewsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    h2 {
+      color: variables.$textColorGrey;
+    }
+    .reviewsCta {
+      display: flex;
+      flex-direction: column;
+      .reviewCTANotLoggedIn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: variables.$navigationColor;
+        padding: 2rem;
+        font-size: 2rem;
+        .reviewCTANotLoggedInCTA {
+          button {
+            height: 5rem;
+            width: 15rem;
+            min-width: 15rem;
+            background-color: variables.$buttonBackground;
+            border: 2px solid variables.$silverColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            p {
+              color: variables.$textColorWhite;
+              font-size: 2rem;
+            }
+          }
+          button:hover {
+            background-color: variables.$navigationColor;
+          }
+          button:active {
+            border: none;
+            background-color: variables.$navigationColor;
+          }
+        }
+      }
+    }
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}

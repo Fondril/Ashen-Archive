@@ -1,0 +1,24 @@
+@use "././../variables";
+
+.testingPage {
+  background-color: variables.$backgroundColor;
+  width: 100vw;
+  max-width: 100%;
+  padding-top: 25rem;
+  font-size: 1.6rem;
+  .testingContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 25rem);
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    gap: 8.6rem;
+    background-color: variables.$papirusYellow;
+    .testingButton {
+      width: 20rem;
+      height: 10rem;
+    }
+  }
+}

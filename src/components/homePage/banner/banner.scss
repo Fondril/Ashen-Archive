@@ -1,0 +1,55 @@
+@use "./../../../variables";
+
+.bannerSection {
+  height: 100vh;
+  background-color: variables.$navigationColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: variables.$navigationHeight;
+  .bannerContainer {
+    .bannerHeader {
+      position: absolute;
+      top: 15vh;
+      left: 8vw;
+      color: white;
+      font-size: 8rem;
+      z-index: 10000;
+    }
+    .bannerHeaderH2 {
+      position: absolute;
+      top: 35vh;
+      left: 8vw;
+      color: white;
+      font-size: 5rem;
+      z-index: 10000;
+    }
+    .bannerHeaderH3 {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 45vh;
+      left: 8vw;
+      color: white;
+      font-size: 2rem;
+      z-index: 10000;
+      width: 40rem;
+    }
+    .bannerImage {
+      mask-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+
+      height: calc(100vh - variables.$navigationHeight);
+      aspect-ratio: 16/8;
+    }
+    .homepageExploreButton {
+      position: absolute;
+      z-index: 10000;
+      top: 90vh;
+      left: calc(50vw - 17rem - 1px);
+    }
+  }
+}

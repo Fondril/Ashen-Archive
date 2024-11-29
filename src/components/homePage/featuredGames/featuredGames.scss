@@ -1,0 +1,78 @@
+@use "../../../variables";
+
+.featuredGamesSection {
+  background: variables.$backgroundGradient;
+  padding-bottom: variables.$pageBottomPadding;
+}
+
+.featuredGamesContainer {
+  width: 70%;
+  min-width: 1200px;
+  background-color: variables.$backgroundColor1;
+  border-radius: 9px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  .featuredGamesHeader {
+    font-size: 4rem;
+    color: variables.$textColorWhite;
+  }
+  .featuredGamesCarouselWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    .featuredGamesArrowWrapper {
+      width: 5rem;
+      height: 18rem;
+      background-color: variables.$backgroundColor;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .featuredGamesArrows {
+        width: 4rem;
+        height: 7rem;
+      }
+    }
+    .featuredGamesArrowWrapper:hover {
+      background-color: variables.$navigationColor;
+    }
+    .featuredGamesArrowWrapper:active {
+      background-color: variables.$backgroundColor;
+    }
+    .featuredGamesListWrapper {
+      display: flex;
+      background-color: variables.$backgroundColor;
+      width: 1020px;
+      min-width: 1020px;
+      border-radius: 9px;
+      overflow: hidden;
+    }
+  }
+  .featuredGamesCarouselDots {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.featuredGamesCarouselDotsOuterRing {
+  height: 13px;
+  width: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  background-color: variables.$navigationColor;
+  border-radius: 50%;
+}
+.featuredGamesCarouselDotsActive {
+  height: 9px;
+  width: 9px;
+  background-color: white;
+  border-radius: 50%;
+}

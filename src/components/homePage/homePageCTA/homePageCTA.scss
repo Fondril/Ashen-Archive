@@ -1,0 +1,16 @@
+@use "../../../variables";
+
+.homePageCTASection {
+  background: variables.$backgroundGradient;
+  padding-bottom: variables.$pageBottomPadding;
+}
+
+.homePageCTAContainer {
+  width: 70%;
+  min-width: 1200px;
+  background-color: variables.$backgroundColor1;
+  border-radius: 9px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,43 @@
+@use "../../../variables";
+
+.logOutPopUpContainer {
+  height: 18rem;
+  width: 30rem;
+  position: absolute;
+  border-radius: 9px;
+  top: 10vh;
+  left: calc(50% - 15rem);
+  background-color: variables.$backgroundColor;
+  color: variables.$textColorWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  p {
+    font-size: 2rem;
+  }
+  .logOutPopUpCTA {
+    display: flex;
+    gap: 2rem;
+    .logOutPopUpButton {
+      height: 6rem;
+      width: 12rem;
+      min-width: 12rem;
+      background-color: variables.$buttonBackground;
+      border: 2px solid variables.$silverColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 9px;
+      p {
+        color: variables.$textColorWhite;
+        font-size: 2rem;
+      }
+    }
+    .logOutPopUpButton:hover {
+      background-color: variables.$navigationColor;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+@use "../../../variables";
+
+$gameComponentHeight: 13rem;
+
+.gameComponentContainer {
+  max-height: $gameComponentHeight;
+  background-color: variables.$backgroundColor;
+  color: variables.$textColorWhite;
+  z-index: 20;
+  font-size: 1.6rem;
+  border-radius: 9px;
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    .gameComponentLeftSide {
+      display: flex;
+      gap: 2rem;
+      #gameComponentLink {
+        color: variables.$textColorWhite;
+        height: $gameComponentHeight;
+        max-height: $gameComponentHeight;
+      }
+      .gameComponentImage {
+        height: $gameComponentHeight;
+        max-height: $gameComponentHeight;
+        width: 26rem;
+        border-radius: 9px;
+        object-fit: cover;
+      }
+      .gameComponentInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.5rem 0 0.5rem 0;
+        p {
+          span {
+            color: gray;
+          }
+        }
+      }
+    }
+
+    .gameComponentRightSide {
+      display: flex;
+
+      .gameComponentCTA {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
+        .gameComponentCTAButton {
+          height: 5rem;
+          width: 15rem;
+          min-width: 15rem;
+          background-color: variables.$buttonBackground;
+          border: 2px solid variables.$silverColor;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          p {
+            color: variables.$textColorWhite;
+            font-size: 2rem;
+          }
+        }
+        .gameComponentCTAButton:hover {
+          background-color: variables.$navigationColor;
+        }
+        .gameComponentCTAButton:active {
+          border: none;
+          background-color: variables.$navigationColor;
+        }
+      }
+    }
+  }
+}
+.gameComponentContainer:hover {
+  transition: 0.1s;
+  scale: 102%;
+}
+
+.gameComponentNameA {
+  color: variables.$textColorWhite;
+  font-size: 1.8rem;
+}
+.gameComponentNameA:hover {
+  text-decoration: underline;
+}
