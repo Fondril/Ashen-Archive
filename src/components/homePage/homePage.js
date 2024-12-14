@@ -4,10 +4,9 @@ import HomePageCTA from "./homePageCTA/homePageCTA";
 import TopRated from "./topRated/topRated";
 
 function HomePage() {
-  const homepage = true;
   return (
     <>
-      <Banner homepage={homepage} />
+      <Banner homepage />
       <TopRated />
       <FeaturedGames />
       <HomePageCTA />
